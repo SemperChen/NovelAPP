@@ -132,7 +132,7 @@ class AppWithNavigationState extends Component {
 
     onBackAndroid = () => {
         try{
-            if (this.currentRouteName === 'App') {
+            if (this.index === 0) {
                 if (this.lastBackPressed && this.lastBackPressed + 2000 >= Date.now()) {
                     RNExitApp.exitApp();
                     // AppRegistry.unmountApplicationComponentAtRootTag(1);
@@ -152,7 +152,7 @@ class AppWithNavigationState extends Component {
     render() {
         const {dispatch, nav} = this.props;
         this.index = nav.index;
-        this.currentRouteName = nav.routes[this.index].routeName;
+        // this.currentRouteName = nav.routes[this.index].routeName;
         const navigation = addNavigationHelpers({
             dispatch: dispatch,
             state: nav,
