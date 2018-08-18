@@ -1,5 +1,6 @@
 # NovelAPP    [![Build Status](https://travis-ci.org/SemperChen/NovelAPP.svg?branch=master)](https://travis-ci.org/SemperChen/NovelAPP)
 ## 199元有问必答包教包会服务，能让你迅速跳出新手坑[点击购买](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
+### 另附送RN开发从新系统开始（从零开始）的全程视频教程
 #### [演示视频：https://www.bilibili.com/video/av28309525/](https://www.bilibili.com/video/av28309525/)
 #### 实在抱歉我在以下做一些广告，虽然我们团队的盈利不错，但码农终究是码农，也只能一点一滴的积累果实，所以为了明天更美好，我多了点套路，还请大家谅解
 #### 如果这个项目对你有帮助，请不要忘记在右上角点赞
