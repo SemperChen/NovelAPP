@@ -7,7 +7,7 @@ export const ThemeColors = {
     darkColors: {
         primary: '#262626',
         dark: '#1a1a1a',
-        light: '#484848',
+        light: '#5e5e5e',
         grayLight: '#99979c',
         borderColor: '#eee',
     },

@@ -169,8 +169,8 @@ class ReaderMenuSet extends React.Component {
                             step={1}
                             maximumValue={this.maxFontSize}
                             style={styles.slider}
-                            maximumTrackTintColor="deeppink"
-                            minimumTrackTintColor="gainsboro"
+                            maximumTrackTintColor="gainsboro"
+                            minimumTrackTintColor="deeppink"
                             thumbTintColor="deeppink"/>
                         <TouchableHighlight onPress={() => {
                             if (this.state.readerFontSize < this.maxFontSize) {

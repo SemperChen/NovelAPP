@@ -6,7 +6,7 @@ import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import {WIDTH} from "../utils/DimensionsUtil";
 import {READER_SEX, THEME_COLORS} from "../constants/constants";
-import {NavigationActions} from "react-navigation";
+import {NavigationActions, StackActions} from "react-navigation";
 import {saveAppConfig} from "../utils/ConfigUtil";
 import I18n from "../i18n/i18n";
 
@@ -19,7 +19,7 @@ class SelectSexPage extends React.Component {
         NovelAppConfig.readerSex = sex;
         this.props.screenProps.setTheme(NovelAppConfig.themeColorName);
         saveAppConfig(NovelAppConfig);
-        this.props.navigation.dispatch(NavigationActions.reset({
+        this.props.navigation.dispatch(StackActions.reset({
             index: 0,
             actions: [
                 NavigationActions.navigate({routeName: 'App'}),

@@ -100,7 +100,7 @@ android {
     defaultConfig {
         applicationId "com.semper.novelapp"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         ndk {
@@ -108,13 +108,13 @@ android {
         }
     }
     //signingConfigs {
-     //       release {
-     //           storeFile file(MYAPP_RELEASE_STORE_FILE)
-     //           storePassword MYAPP_RELEASE_STORE_PASSWORD
-      //          keyAlias MYAPP_RELEASE_KEY_ALIAS
-     //           keyPassword MYAPP_RELEASE_KEY_PASSWORD
-     //       }
-    // }
+    //       release {
+    //          storeFile file(MYAPP_RELEASE_STORE_FILE)
+    //           storePassword MYAPP_RELEASE_STORE_PASSWORD
+    //          keyAlias MYAPP_RELEASE_KEY_ALIAS
+    //          keyPassword MYAPP_RELEASE_KEY_PASSWORD
+    //      }
+    //}
     splits {
         abi {
             reset()
