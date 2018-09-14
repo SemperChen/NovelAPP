@@ -7,6 +7,7 @@ import {READER_SEX, THEME_COLORS} from "../constants/constants";
 import {saveAppConfig} from "../utils/ConfigUtil";
 import {WIDTH} from "../utils/DimensionsUtil";
 import I18n from "../i18n/i18n";
+import {NavigationActions, StackActions} from 'react-navigation';
 
 class SettingPage extends React.Component {
 
@@ -40,7 +41,7 @@ class SettingPage extends React.Component {
     };
 
     setSkinModalVisible(visible) {
-        this.setState({skinModalVisible: visible});
+        this.setState({skinModalVisible: visible})
     }
 
     setReaderSexModalVisible(visible) {
@@ -109,7 +110,7 @@ class SettingPage extends React.Component {
                                 onPress={() => {
                                     this.selectTheme(THEME_COLORS.DARK);
                                     NovelAppConfig.themeColorName = THEME_COLORS.DARK;
-                                    this.setSkinModalVisible(false)
+                                    this.setSkinModalVisible(false);
                                 }}>
                                 <View style={styles.item}>
                                     <Text style={styles.itemLeftText}>{THEME_COLORS.DARK}</Text>
@@ -120,7 +121,7 @@ class SettingPage extends React.Component {
                                 onPress={() => {
                                     this.selectTheme(THEME_COLORS.PINK);
                                     NovelAppConfig.themeColorName = THEME_COLORS.PINK;
-                                    this.setSkinModalVisible(false)
+                                    this.setSkinModalVisible(false);
                                 }}>
                                 <View style={styles.item}>
                                     <Text style={styles.itemLeftText}>{THEME_COLORS.PINK}</Text>

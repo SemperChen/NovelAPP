@@ -57,7 +57,7 @@ class Carousel extends React.Component {
                     }}
                     renderItem={renderItem}
                     keyExtractor={(item, index) => {
-                        return index
+                        return index + ''
                     }}
                     onViewableItemsChanged={this._onViewableItemsChanged}
                     viewabilityConfig={VIEWABILITY_CONFIG}

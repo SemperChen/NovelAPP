@@ -9,7 +9,7 @@ class ShadowImage extends React.Component {
     render() {
         return (
             <View style={styles.imgContainer}>
-                <Image resizeMode="stretch" source={this.props.source}
+                <Image resizeMode={Image.resizeMode.container} source={this.props.source}
                        style={styles.img}/>
             </View>
         )

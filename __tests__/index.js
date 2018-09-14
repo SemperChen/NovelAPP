@@ -7,6 +7,8 @@ import renderer from 'react-test-renderer';
 jest.mock('react-native-i18n', () => {
     const i18njs = require('i18n-js');
     const zh = require('../js/i18n/locales/zh-CN');
+    i18njs.fallbacks = true;
+
     i18njs.translations = {zh}; // Optional ('en' is the default)
     const getLanguages = (): Promise<string[]> => Promise.resolve(['zh-CN']);
     return {
@@ -20,10 +22,8 @@ jest.mock('react-native-orientation', () => {
         lockToPortrait
     };
 });
-describe('APP test', () => {
-    it('renders correctly', () => {
-        const tree = renderer.create(
-            <Root />
-        );
-    });
-})
+it('renders correctly', () => {
+    const tree = renderer.create(
+        <Root/>
+    );
+});

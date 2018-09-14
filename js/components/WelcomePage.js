@@ -5,7 +5,7 @@ import React from "react";
 import {Image, Text, View,StyleSheet,StatusBar} from "react-native";
 import {connect} from "react-redux";
 import {requestConfig} from "../actions/config";
-import {NavigationActions} from "react-navigation";
+import {NavigationActions, StackActions} from "react-navigation";
 import I18n from "../i18n/i18n";
 import {getLanguages} from 'react-native-i18n'
 import {CHINESE_TYPE} from "../constants/constants";
@@ -67,7 +67,7 @@ class WelcomePage extends React.Component {
     }
 
     _navToMain = () => {
-        this.props.navigation.dispatch(NavigationActions.reset({
+        this.props.navigation.dispatch(StackActions.reset({
             index: 0,
             actions: [
                 NavigationActions.navigate({routeName: 'App'})
