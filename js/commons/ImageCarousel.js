@@ -46,7 +46,7 @@ class ImageCarousel extends React.Component {
                 style={styles.item}
                 underlayColor='#fff'
             >
-                <Image resizeMode={Image.resizeMode.contain} source={{uri: info.item.img}}
+                <Image resizeMode="stretch" source={{uri: info.item.img}}
                        style={{width: WIDTH, height: WIDTH / 3}}/>
             </TouchableHighlight>
         )
