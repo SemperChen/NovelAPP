@@ -64,7 +64,7 @@ const rootSaga = function* root() {
         takeLatestFetch(REQUEST_OTHER_SEARCH,watchEverySearch),
         takeLatestFetch(REQUEST_HOT_SIMILAR,fetchHotSimilar),
         takeLatestFetch(REQUEST_NOTIFICATION,fetchNotification),
-        takeLatestFetch(REQUEST_LOGIN,login),
+        takeLatestFetch(REQUEST_LOGIN,login)
     ])
 };
 export default rootSaga;

@@ -31,7 +31,7 @@ import {
 } from "../utils/ParseHtmlUtil";
 import {HEIGHT, WIDTH} from "../utils/DimensionsUtil";
 import ToastUtil from "../utils/ToastUtil";
-import {NavigationActions, StackActions} from "react-navigation";
+import {NavigationActions} from "react-navigation";
 import ReaderMenuHeader from "../commons/ReaderMenuHeader";
 import ReaderMenuFooter from "../commons/ReaderMenuFooter";
 import ReaderMenuSet from "../commons/ReaderMenuSet";
@@ -539,7 +539,7 @@ class ReadPage extends React.Component {
      */
     _navToSearch = () => {
         global.globalBookNameParam = this.bookName;
-        this.props.navigation.dispatch(StackActions.reset({
+        this.props.navigation.dispatch(NavigationActions.reset({
             index: 1,
             actions: [
                 NavigationActions.navigate({routeName: 'App'}),
@@ -550,7 +550,7 @@ class ReadPage extends React.Component {
     };
 
     _resetNav = () => {
-        this.props.navigation.dispatch(StackActions.reset({
+        this.props.navigation.dispatch(NavigationActions.reset({
             index: 0,
             actions: [
                 NavigationActions.navigate({routeName: 'App'})

@@ -74,7 +74,8 @@ class CategoryDetailPage extends React.Component {
             {type: 'new', title: I18n.t('newBook')}, {type: 'over', title: I18n.t('over')}];
         this.gender = params.gender;
         setParams({toggleFilter: this.toggleFilter});
-        this.fetchCategoryDetail()
+        // this.fetchCategoryDetail()
+        // this.fetchCategoryDetail();
     }
 
     shouldComponentUpdate(nextProps) {

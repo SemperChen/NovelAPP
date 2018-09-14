@@ -10,7 +10,6 @@ import './commons/NovelAppConfig'
 const store = configureStore();
 store.runSaga(rootSaga);
 global.globalBookNameParam = undefined;
-
 export default class Root extends Component {
     componentWillMount() {
         Orientation.lockToPortrait()

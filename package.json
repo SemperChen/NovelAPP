@@ -16,33 +16,33 @@
     "clear watchman watches": "watchman watch-del-all"
   },
   "dependencies": {
-    "lodash": "^4.17.10",
-    "prop-types": "^15.6.1",
-    "react": "16.5.0",
-    "react-native": "0.57.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "16.0.0-beta.5",
+    "react-native": "0.49.5",
     "react-native-exit-app": "^1.0.0",
-    "react-native-i18n": "^2.0.12",
+    "react-native-i18n": "^2.0.9",
     "react-native-orientation": "^3.1.0",
-    "react-native-scrollable-tab-view": "git+https://github.com/SemperChen/react-native-scrollable-tab-view.git",
+    "react-native-scrollable-tab-view": "^0.8.0",
     "react-native-storage": "^0.2.2",
     "react-native-vector-icons": "^4.6.0",
-    "react-navigation": "^2.6.2",
-    "react-navigation-redux-helpers": "^2.0.2",
-    "react-redux": "^5.0.7",
+    "react-navigation": "^1.5.12",
+    "react-navigation-redux-helpers": "^1.1.2",
+    "react-redux": "^5.0.6",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0"
   },
   "devDependencies": {
-    "babel-jest": "^23.6.0",
-    "babel-preset-react-native": "^4.0.1",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.5.0"
+    "babel-jest": "23.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.2.0",
+    "react-test-renderer": "16.0.0-beta.5"
   },
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-navigation|react-navigation-redux-helpers)"
+      "node_modules/(?!(jest-)?react-native|react-navigation)"
     ]
   }
 }

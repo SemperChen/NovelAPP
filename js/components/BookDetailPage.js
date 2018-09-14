@@ -7,7 +7,7 @@ import {ZSSQ_IMG_URL, ZSSQ_NAME} from "../constants/api";
 import HotSimilar from "../commons/HotSimilar";
 import I18n from "../i18n/i18n";
 import MainDetail from "../commons/MainDetail";
-import {NavigationActions, StackActions} from "react-navigation";
+import {NavigationActions} from "react-navigation";
 
 class BookDetailPage extends React.Component {
 
@@ -35,7 +35,7 @@ class BookDetailPage extends React.Component {
     }
 
     _navToSearch = () => {
-        this.props.navigation.dispatch(StackActions.reset({
+        this.props.navigation.dispatch(NavigationActions.reset({
             index: 1,
             actions: [
                 NavigationActions.navigate({routeName: 'App'}),

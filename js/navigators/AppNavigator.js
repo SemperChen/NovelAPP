@@ -1,15 +1,18 @@
 import React from 'react';
-import {createBottomTabNavigator, createStackNavigator} from 'react-navigation';
+import {StackNavigator, TabNavigator} from 'react-navigation';
 import Bookcase from "../components/Bookcase";
 import Bookstore from "../components/Bookstore";
 import Search from "../components/Search";
 import ReadPage from "../components/ReadPage";
-// import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
-import {Animated, Easing, TouchableOpacity} from "react-native";
+import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
+import {Animated, Easing} from "react-native";
 import BookDetailPage from "../components/BookDetailPage";
 import CatalogPage from "../components/CatalogPage";
 import Explore from "../components/Explore";
 import RankingsPage from "../components/RankingsPage";
+import WeekRanking from "../components/WeekRanking";
+import MonthRanking from "../components/MonthRanking";
+import TotalRanking from "../components/TotalRanking";
 import CategoryPage from "../components/CategoryPage";
 import CategoryDetailPage from "../components/CategoryDetailPage";
 import SettingPage from "../components/SettingPage";
@@ -21,9 +24,8 @@ import I18n from '../i18n/i18n';
 import NotificationPage from "../components/NotificationPage";
 import WebReadPage from "../components/WebReadPage";
 import UserPage from "../components/UserPage";
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const TabContainer = createBottomTabNavigator(
+const TabContainer = TabNavigator(
     {
         Bookcase: {screen: Bookcase},
         Bookstore: {screen: Bookstore},
@@ -62,35 +64,46 @@ const TabContainer = createBottomTabNavigator(
     }
 );
 
+const RankingTab = TabNavigator(
+    {
+        WeekRanking: {screen: WeekRanking},
+        MonthRanking: {screen: MonthRanking},
+        TotalRanking: {screen: TotalRanking}
+    },
+    {
+        animationEnabled: true,
+        swipeEnabled: true,
+        lazy: true,
+        tabBarPosition: 'top',
+        tabBarOptions: {
+            /*activeTintColor: '#ec407a',
+            inactiveTintColor: '#ff77a9',*/
+            showLabel: true,
+            labelStyle: {
+                margin: 0,
+                fontSize: 12,
+            },
+            style: {
+                backgroundColor: '#fff',
+            },
+            indicatorStyle: {},
+            iconStyle: {},
+            tabStyle: {
+                height: 32,
+                margin: 0,
+                padding: 0
+            }
+        }
+    }
+);
 /**
  * 路由配置中心
  */
-const AppNavigator = createStackNavigator({
+const AppNavigator = StackNavigator({
     Welcome: {screen: WelcomePage},
     User: {screen: UserPage},
     SelectSex: {screen: SelectSexPage},
-    App: {screen: TabContainer, navigationOptions: ({navigation, screenProps}) => ({
-            headerRight: (
-                <TouchableOpacity
-                    style={{padding: 10}}
-                    onPress={() => {
-                        navigation.navigate('Search')
-                    }}>
-                    <MaterialIcons name="search" size={28} style={{color: '#fff'}}/>
-                </TouchableOpacity>),
-            headerLeft: (
-                <TouchableOpacity
-                    style={{padding: 5,marginLeft:5}}
-                    onPress={() => {
-                        navigation.navigate('User')
-                    }}>
-                    <MaterialIcons name="person" size={28} style={{color: '#fff'}}/>
-                </TouchableOpacity>
-            ),
-            headerStyle: {backgroundColor: screenProps.appTheme.primaryColor},
-            headerTitle: I18n.t('magicalBookstore'),
-            headerTintColor: '#fff'
-        })},
+    App: {screen: TabContainer, navigationOptions: {headerTitle: I18n.t('magicalBookstore'), headerTintColor: '#fff'}},
     Search: {screen: Search},
     Read: {screen: ReadPage},
     WebRead: {screen: WebReadPage},
@@ -108,62 +121,14 @@ const AppNavigator = createStackNavigator({
         // backgroundColor: '#F5FCFF',
         backgroundColor: '#fafafa',
     },
-    /*transitionConfig: () => ({
-        screenInterpolator: StackViewStyleInterpolator.forHorizontal,
+    transitionConfig: () => ({
+        screenInterpolator: CardStackStyleInterpolator.forHorizontal,
         transitionSpec: {
-            duration: 360,
+            duration: 300,
             easing: Easing.inOut(Easing.ease),
             timing: Animated.timing,
         },
-    }),*/
-    /*transitionConfig: () => ({
-        transitionSpec: {
-            duration: 300,
-            easing: Easing.out(Easing.poly(4)),
-            timing: Animated.timing,
-        },
-        screenInterpolator: sceneProps => {
-            const { layout, position, scene } = sceneProps;
-            const { index } = scene;
-
-            const height = layout.initHeight;
-            const translateY = position.interpolate({
-                inputRange: [index - 1, index, index + 1],
-                outputRange: [height, 0, 0],
-            });
-
-            const opacity = position.interpolate({
-                inputRange: [index - 1, index - 0.99, index],
-                outputRange: [0, 1, 1],
-            });
-
-            return { opacity, transform: [{ translateY }] };
-        },
-    }),*/
-    transitionConfig: () => ({
-        transitionSpec: {
-            duration: 300,
-            easing: Easing.out(Easing.poly(4)),
-            timing: Animated.timing,
-        },
-        screenInterpolator: sceneProps => {
-            const { layout, position, scene } = sceneProps;
-            const { index } = scene;
-
-            const width = layout.initWidth;
-            const translateX = position.interpolate({
-                inputRange: [index - 1, index, index + 1],
-                outputRange: [width, 0, 0],
-            });
-
-            const opacity = position.interpolate({
-                inputRange: [index - 1, index - 0.99, index],
-                outputRange: [0, 1, 1],
-            });
-
-            return { opacity, transform: [{ translateX }] };
-        },
-    }),
+    })
 });
 
 export default AppNavigator;

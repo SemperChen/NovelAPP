@@ -3,7 +3,7 @@
  */
 import {Animated, Easing} from "react-native";
 
-export const createAnimation = function (value, toValue, duration = 200, easing = Easing.linear, delay = 0) {
+export const createAnimation = function (value, toValue, duration = 400, easing = Easing.linear, delay = 0) {
     return Animated.timing(
         value,
         {

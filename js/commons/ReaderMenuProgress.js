@@ -82,8 +82,8 @@ class ReaderMenuProgress extends React.Component {
                             step={1}
                             maximumValue={this.props.catalogDataLength - 1}
                             style={styles.slider}
-                            maximumTrackTintColor="gainsboro"
-                            minimumTrackTintColor="deeppink"
+                            maximumTrackTintColor="deeppink"
+                            minimumTrackTintColor="gainsboro"
                             thumbTintColor="deeppink"/>
                     </View>
 

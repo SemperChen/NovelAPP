@@ -14,6 +14,7 @@ import {cancel, fork, take} from "redux-saga/effects"
     }
 })*/
 /**
+ * 当新发起请求时，取消旧请求
  *
  * @param pattern
  * @param saga

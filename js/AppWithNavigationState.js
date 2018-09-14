@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import {addNavigationHelpers} from 'react-navigation';
 import AppNavigator from './navigators/AppNavigator';
 import {THEME_COLORS} from "./constants/constants";
 import ThemeFactory, {ThemeColors} from "./commons/ThemeFactory";
@@ -10,10 +11,9 @@ import {notificationUrl} from "./constants/api";
 import {getChineseText} from "./utils/LanguageUtil";
 import {getNotification} from "./utils/ParseHtmlUtil";
 import {saveAppConfig} from "./utils/ConfigUtil";
-import {navigationPropConstructor} from './utils/redux';
+import {addListener} from './utils/redux';
 import {NavigationActions} from 'react-navigation';
 import RNExitApp from 'react-native-exit-app';
-import {initializeListeners} from 'react-navigation-redux-helpers/src/middleware';
 
 class AppWithNavigationState extends Component {
 
@@ -60,7 +60,6 @@ class AppWithNavigationState extends Component {
     };
 
     componentDidMount() {
-        initializeListeners('root', this.props.nav);
         this.props.dispatch(requestNotification(notificationUrl))
     }
 
@@ -133,7 +132,7 @@ class AppWithNavigationState extends Component {
 
     onBackAndroid = () => {
         try{
-            if (this.index===0) {
+            if (this.index === 0) {
                 if (this.lastBackPressed && this.lastBackPressed + 2000 >= Date.now()) {
                     RNExitApp.exitApp();
                     // AppRegistry.unmountApplicationComponentAtRootTag(1);
@@ -154,16 +153,15 @@ class AppWithNavigationState extends Component {
         const {dispatch, nav} = this.props;
         this.index = nav.index;
         // this.currentRouteName = nav.routes[this.index].routeName;
-        this._navigation = navigationPropConstructor(
-            dispatch,
-            nav,
-            AppNavigator.router,
-            () => this._navigation
-        );
+        const navigation = addNavigationHelpers({
+            dispatch: dispatch,
+            state: nav,
+            addListener,
+        });
         return (
             <AppNavigator
                 screenProps={{setTheme: this.setTheme, appTheme: this.state.appTheme}}
-                navigation={this._navigation}
+                navigation={navigation}
             />
         );
     }
