@@ -42,10 +42,7 @@
 - cPanel主机搭建WordPress博客（零代码搭建网站）--实现Google adsense广告盈利
 - debian7搭建生产环境的linux+nodejs+express+mysql的web服务器（附送）
 
-
 [点击此处购买](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
-
-#### Adsense广告案例：[https://semperchan.com](https://semperchan.com)
 
 #### RNAdmob广告案例--[Poetry开源项目](https://github.com/SemperChen/Poetry)
 目前已在GooglePlay和AppStore上架--[Poetry.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/poetry/poetry.apk)
