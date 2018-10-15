@@ -39,7 +39,7 @@ class UserPage extends React.Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         return this.props.loginData !== nextProps.loginData ||
-            this.props.isFetching!==nextProps.isFetching||
+            this.props.isFetching !== nextProps.isFetching ||
             this.state.login !== nextState.login ||
             this.state.register !== nextState.register
     }
@@ -52,12 +52,11 @@ class UserPage extends React.Component {
         this.props.dispatch(clearLogin());
     }
 
-    login = () =>{
+    login = () => {
         if (this.username && this.password) {
             let url = this.isClickRegister ? registerUrl : loginUrl;
-            let params = '?username=' + this.username + '&password=' + this.password;
-            this.props.dispatch(requestLogin(url + params));
-            console.log('url+params', url + params)
+            let body = {username: this.username, password: this.password};
+            this.props.dispatch(requestLogin(url, body))
         } else {
             ToastUtil.showShort(getChineseText('请输入用户名和密码'))
         }
@@ -65,7 +64,7 @@ class UserPage extends React.Component {
 
     render() {
         const appTheme = this.props.screenProps.appTheme;
-        if(this.props.loginData===REQUEST_NET_FAILED){
+        if (this.props.loginData === REQUEST_NET_FAILED) {
             ToastUtil.showShort(getChineseText('连接服务器失败'))
         }
         let isSavedBookmark = null;
@@ -123,7 +122,7 @@ class UserPage extends React.Component {
                         <View>
                             <View
                                 style={styles.loginSuc}>
-                                <View style={[styles.imgContent,{backgroundColor:appTheme.lightColor}]}>
+                                <View style={[styles.imgContent, {backgroundColor: appTheme.lightColor}]}>
                                     <Icon
                                         name='md-person'
                                         size={40}
@@ -137,10 +136,12 @@ class UserPage extends React.Component {
                                 style={styles.item}
                                 onPress={() => {
                                     if (this.username && this.password) {
-                                        let params = '?username=' + this.username + '&password='
-                                            + this.password + '&bookmark='
-                                            + JSON.stringify(this.props.bookmarks);
-                                        this.props.dispatch(requestLogin(saveUrl + params));
+                                        let body = {
+                                            username: this.username,
+                                            password: this.password,
+                                            bookmark: JSON.stringify(this.props.bookmarks)
+                                        };
+                                        this.props.dispatch(requestLogin(saveUrl, body));
                                     } else {
                                         ToastUtil.showShort(getChineseText('用户名和密码错误'))
                                     }
@@ -156,7 +157,7 @@ class UserPage extends React.Component {
                                                 color={appTheme.primaryColor}
                                                 size="small"
                                             />
-                                            :null
+                                            : null
 
                                     }
                                 </View>
@@ -230,8 +231,8 @@ class UserPage extends React.Component {
                             />
                             <View style={styles.loginBtnContainer}>
                                 <TouchableOpacity
-                                    style={[{backgroundColor:appTheme.primaryColor},styles.btn]}
-                                    onPress={()=>{
+                                    style={[{backgroundColor: appTheme.primaryColor}, styles.btn]}
+                                    onPress={() => {
                                         this.login()
                                     }}
                                 >
@@ -244,7 +245,7 @@ class UserPage extends React.Component {
                                                 size="small"
                                             />
                                             :
-                                            <Text style={{color:'#fff'}}>{this.state.login}</Text>
+                                            <Text style={{color: '#fff'}}>{this.state.login}</Text>
 
                                     }
                                 </TouchableOpacity>
@@ -285,16 +286,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderBottomWidth: StyleSheet.hairlineWidth,
         borderColor: '#eee',
-        backgroundColor:'#fffffe'
+        backgroundColor: '#fffffe'
     },
-    login:{
+    login: {
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
         marginTop: WIDTH / 10
     },
-    loginBtnContainer:{
+    loginBtnContainer: {
         width: WIDTH * 0.8,
         marginTop: WIDTH / 10
     },
@@ -303,8 +304,8 @@ const styles = StyleSheet.create({
     },
     item: {
         padding: 20,
-        borderTopWidth:StyleSheet.hairlineWidth,
-        borderColor:'#EEE'
+        borderTopWidth: StyleSheet.hairlineWidth,
+        borderColor: '#EEE'
     },
     imgContent: {
         width: WIDTH / 5,
@@ -314,21 +315,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         margin: 20
     },
-    btn:{
-        padding:10,
-        justifyContent:'center',
-        alignItems:'center',
-        borderRadius:8
+    btn: {
+        padding: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 8
     },
-    updateBookmark:{
-        flexDirection:'row',
-        alignItems:'center'
+    updateBookmark: {
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });
 
 function mapStateToProps(state) {
     const {items: bookmarks} = state.bookmarks || {items: []};
-    const {loginData,isFetching} = state.login;
+    const {loginData, isFetching} = state.login;
     return {loginData, bookmarks, isFetching}
 }
 

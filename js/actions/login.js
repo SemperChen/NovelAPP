@@ -3,10 +3,11 @@
  */
 import {CLEAR_LOGIN, RECEIVE_LOGIN, REQUEST_LOGIN} from "../constants/ActionTypes";
 
-export function requestLogin(loginUrl) {
+export function requestLogin(loginUrl, body) {
     return {
         type: REQUEST_LOGIN,
-        loginUrl:loginUrl
+        loginUrl:loginUrl,
+        body:body
     };
 }
 

@@ -2,10 +2,10 @@
  * @author Semper
  */
 //const BASE_URL = 'http://192.168.0.104:8080/';
-const BASE_URL = 'http://192.168.1.100:8080/';
+const BASE_URL = 'http://192.168.1.120:8000/';
 export const BOOKMARKS_URL = BASE_URL + 'bookmark.json';
 
-export const baseUrl = 'http://107.173.35.226:8000/';
+export const baseUrl = 'http://104.168.29.114:8000/';
 export const loginUrl = baseUrl+'login';
 export const registerUrl = baseUrl+'register';
 export const saveUrl = baseUrl+'save';
