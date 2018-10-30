@@ -8,14 +8,14 @@ export const contentFormat = (arr, fontSize) => {
     let fontCount = parseInt(WIDTH / (fontSize + 1)) - 1;
     let lines;
     if (Platform.OS === 'ios') {
-        lines = parseInt(HEIGHT / fontSize / 1.4) - 5;
+        lines = parseInt(HEIGHT / fontSize / 1.4) - 6;
         if(fontSize>24){
             lines++
         }else if(fontSize>32){
             lines=lines+2
         }
     } else {
-        lines = parseInt(HEIGHT / fontSize / 1.9) - 2;
+        lines = parseInt(HEIGHT / fontSize / 1.9) - 3;
         if(fontSize<28){
             lines--
         }

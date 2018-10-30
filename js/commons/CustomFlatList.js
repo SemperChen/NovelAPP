@@ -215,7 +215,7 @@ class CustomFlatList extends React.Component {
     );
 
     _keyExtractor = (item, index) => {
-        return index
+        return item.chapterName + index
     }
 }
 

@@ -34,7 +34,7 @@ class ReadButton extends React.Component {
 
 ReadButton.propTypes = {
     onPress: PropTypes.func,
-    style: PropTypes.number,
+    style: PropTypes.object,
     backgroundColor: PropTypes.string,
     borderColor: PropTypes.string,
     color: PropTypes.string
