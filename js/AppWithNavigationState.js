@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import AppNavigator from './navigators/AppNavigator';
 import {THEME_COLORS} from "./constants/constants";
-import ThemeFactory, {ThemeColors} from "./commons/ThemeFactory";
+import createTheme, {ThemeColors} from "./commons/ThemeFactory";
 import {Alert, BackHandler, Linking, Platform, ToastAndroid} from "react-native";
 import {requestNotification} from "./actions/notification";
 import {notificationUrl} from "./constants/api";
@@ -29,11 +29,11 @@ class AppWithNavigationState extends Component {
     initializeData = () => {
         if (NovelAppConfig.themeColorName === THEME_COLORS.DARK) {
             return {
-                appTheme: ThemeFactory.createTheme(ThemeColors.darkColors)
+                appTheme: createTheme(ThemeColors.darkColors)
             }
         } else {
             return {
-                appTheme: ThemeFactory.createTheme(ThemeColors.pinkColors)
+                appTheme: createTheme(ThemeColors.pinkColors)
             }
         }
     };
@@ -46,12 +46,12 @@ class AppWithNavigationState extends Component {
         switch (colorName) {
             case THEME_COLORS.DARK:
                 this.setState({
-                    appTheme: ThemeFactory.createTheme(ThemeColors.darkColors)
+                    appTheme: createTheme(ThemeColors.darkColors)
                 });
                 break;
             case THEME_COLORS.PINK:
                 this.setState({
-                    appTheme: ThemeFactory.createTheme(ThemeColors.pinkColors)
+                    appTheme: createTheme(ThemeColors.pinkColors)
                 });
                 break;
             default:

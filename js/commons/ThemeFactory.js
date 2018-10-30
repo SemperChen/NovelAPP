@@ -7,7 +7,7 @@ export const ThemeColors = {
     darkColors: {
         primary: '#262626',
         dark: '#1a1a1a',
-        light: '#5e5e5e',
+        light: '#5b5b5b',
         grayLight: '#99979c',
         borderColor: '#eee',
     },
@@ -32,41 +32,38 @@ export const ThemeColors = {
         purple: '#613d7c'
     }*/
 };
-export default class ThemeFactory {
+export default function createTheme(themeColor = ThemeColors.darkColors) {
+    return {
+        primaryColor: themeColor.primary,
+        darkColor: themeColor.dark,
+        lightColor: themeColor.light,
+        styles: StyleSheet.create({
+            fontColorGrayLight: {
+                color: themeColor.grayLight
+            },
+            primaryBgColor: {
+                backgroundColor: themeColor.primary
+            },
+            primaryColor: {
+                color: themeColor.primary
+            },
+            darkBgColor: {
+                backgroundColor: themeColor.dark
+            },
+            darkColor: {
+                color: themeColor.dark
+            },
+            lightBgColor: {
+                backgroundColor: themeColor.light
+            },
+            lightColor: {
+                color: themeColor.light
+            },
+            borderColor: {
+                borderColor: themeColor.borderColor
+            }
 
-    static createTheme(themeColor = ThemeColors.darkColors) {
-        return {
-            primaryColor: themeColor.primary,
-            darkColor: themeColor.dark,
-            lightColor: themeColor.light,
-            styles: StyleSheet.create({
-                fontColorGrayLight: {
-                    color: themeColor.grayLight
-                },
-                primaryBgColor: {
-                    backgroundColor: themeColor.primary
-                },
-                primaryColor: {
-                    color: themeColor.primary
-                },
-                darkBgColor: {
-                    backgroundColor: themeColor.dark
-                },
-                darkColor: {
-                    color: themeColor.dark
-                },
-                lightBgColor: {
-                    backgroundColor: themeColor.light
-                },
-                lightColor: {
-                    color: themeColor.light
-                },
-                borderColor: {
-                    borderColor: themeColor.borderColor
-                }
-
-            })
-        }
+        })
     }
 }
 
