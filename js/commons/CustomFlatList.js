@@ -233,8 +233,8 @@ const styles = StyleSheet.create({
     },
     articleText: {
         alignSelf: 'center',
-
-        textAlign: 'justify'
+        textAlign: 'justify',
+        textAlignVertical:'center'
 
     },
     reFetchContainer: {
