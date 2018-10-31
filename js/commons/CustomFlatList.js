@@ -14,7 +14,6 @@ class CustomFlatList extends React.Component {
 
     constructor() {
         super();
-        this.fontColor = '#000';
         this.state = this.initializeData()
     }
 

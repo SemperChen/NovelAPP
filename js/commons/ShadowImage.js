@@ -6,6 +6,7 @@ import {Image, StyleSheet, View} from "react-native";
 import {IMG_HEIGHT, IMG_MARGIN, IMG_WIDTH} from "../utils/DimensionsUtil";
 
 class ShadowImage extends React.Component {
+
     render() {
         return (
             <View style={styles.imgContainer}>

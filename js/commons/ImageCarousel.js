@@ -10,7 +10,6 @@ import {SpreadData} from "../model/SpreadData";
 import {Spread} from "../model/Spread";
 
 class ImageCarousel extends React.Component {
-
     spreadData: SpreadData;
 
     constructor() {

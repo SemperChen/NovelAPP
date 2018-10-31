@@ -7,7 +7,6 @@ import {Text, TouchableOpacity} from "react-native";
 import {WIDTH} from "../utils/DimensionsUtil";
 
 class ReadButton extends React.Component {
-
     render() {
         let width = WIDTH / 14 * 4;
         let height = width / 3.5;

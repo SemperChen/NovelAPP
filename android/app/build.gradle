@@ -107,6 +107,7 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+
     //signingConfigs {
     //        release {
     //            storeFile file(MYAPP_RELEASE_STORE_FILE)

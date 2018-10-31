@@ -20,7 +20,6 @@ export const contentFormat = (arr, fontSize) => {
             lines--
         }
     }
-
     let array = [];
     let str = '';
     let count = 0;
