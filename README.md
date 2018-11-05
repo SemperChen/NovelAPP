@@ -20,7 +20,7 @@
 - 支持i18n
 - 可换皮肤，樱花粉、星辰黑一键切换
 - 支持云书架，书籍阅读记录可保存到云书架
-- 完整版本是最新代码，已更新到RN0.56，后期持续更新
+- 完整版本是最新代码，已更新到RN0.57.4，后期持续更新
 
 #### 下载完整版本：[天下书阁.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
 
