@@ -9,8 +9,8 @@
 ### [查看最新完整版本详细信息](https://github.com/SemperChen/tianxiashuge)
 
 #### 下载最新完整版本：
-#### [天下书阁.apk(RN0.49.5)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁.apk)
-#### [天下书阁(RN0.57.4).apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/txsg.apk)
+#### [天下书阁.apk--(RN0.49.5)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁.apk)
+#### [天下书阁.apk--(RN0.57.4)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/txsg.apk)
 
 使用react-native-fs和realm，增加了缓存书籍和左右滑动翻页功能
 
