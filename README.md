@@ -8,7 +8,7 @@
 ## 最新完整版本
 ### [查看最新完整版本详细信息](https://github.com/SemperChen/tianxiashuge)
 
-#### 下载最新完整版本：[天下书阁.apk(RN0.49.5)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁.apk) [天下书阁(RN0.57.4).apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/txsg.apk)
+#### 下载最新完整版本：[天下书阁.apk(RN0.49.5)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁.apk)     [天下书阁(RN0.57.4).apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/txsg.apk)
 
 使用react-native-fs和realm，增加了缓存书籍和左右滑动翻页功能
 
@@ -31,7 +31,6 @@
 [![App Store Button](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/appstore.png "App Store Button")](https://itunes.apple.com/cn/app/poetry/id1390162198?mt=8&ign-mpt=uo%3D4)
 [![Play Store Button](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/googleplay.png "Play Store Button")](https://play.google.com/store/apps/details?id=com.semper.poetry)
 
-<img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/b1.PNG?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/b2.PNG?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/b3.PNG?raw=true"  width="280"/>
 ## [后台](https://github.com/SemperChen/bookmark)
 ## 运行
 1. run `npm i`.
