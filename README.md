@@ -22,7 +22,7 @@
 - 支持云书架，书籍阅读记录可保存到云书架
 - 开源版本已更新到RN0.57.4，后期持续更新
 
-#### 下载完整版本：[天下书阁.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
+#### 下载开源版本：[天下书阁.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
 
 ### 完整版本源码是付费的，支持代码讲解，有问必答，极大减少刚入坑的朋友们所走的弯路，另附送RN开发从新系统开始（从零开始）的全程视频教程，可在淘宝[购买](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
 
