@@ -18,8 +18,8 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
-    "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.4",
+    "react": "16.6.1",
+    "react-native": "0.57.7",
     "react-native-exit-app": "^1.0.0",
     "react-native-i18n": "^2.0.15",
     "react-native-orientation": "^3.1.3",
@@ -36,8 +36,8 @@
   "devDependencies": {
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.48.2",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.6.1"
   },
   "jest": {
     "preset": "react-native",
