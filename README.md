@@ -18,9 +18,9 @@
 - 支持云书架，书籍阅读记录可保存到云书架
 - 开源版本已更新到RN0.57.8，后期持续更新
 ## 下载安装
-#### iOS:
+### iOS:
 #### [天下书阁语音阅读版.ipa--新增屏幕常亮、极光推送、热更新(RN0.57.8最新版)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/NovelAPP.ipa)
-#### Android:
+### Android:
 #### [天下书阁语音阅读版.apk--新增屏幕常亮、极光推送、热更新(RN0.57.8最新版)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁语音阅读测试版.apk)
 #### [天下书阁.apk--本项目开源版本](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
 
