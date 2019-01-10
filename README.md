@@ -16,7 +16,7 @@
 - 支持i18n，简体繁体阅读
 - 可换皮肤，樱花粉、星辰黑一键切换
 - 支持云书架，书籍阅读记录可保存到云书架
-- 开源版本已更新到RN0.57.8，后期持续更新
+- 已更新到RN0.57.8，后期持续更新
 ## 下载安装
 ### iOS:
 #### [天下书阁语音阅读版.ipa--新增屏幕常亮、极光推送、热更新(RN0.57.8最新版)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/NovelAPP.ipa)
