@@ -114,7 +114,7 @@ class Bookstore extends React.Component {
                 this.fetchBestEndBook(this.rankings.female[6]._id);
                 this.fetchEditorRecommend(this.rankings.female[10]._id);
                 this.fetchGuessYouLike(this.rankings.female[0]._id);
-                this.fetchHotSearch(this.rankings.female[4]._id)
+                this.fetchHotSearch(this.rankings.female[5]._id)
 
             } else {
                 this.fetchHotRecommend(this.rankings.male[12]._id);

@@ -38,24 +38,34 @@ class BestEndBooks extends React.Component {
         }
     };
 
-    render() {
-        if (this.props.bestEndData) {
-            this.data = _chunk(this.props.bestEndData.ranking.books, 4);
-            if (this.state.index > this.data.length - 2) {
-                this.setState({
-                    index: 0
-                });
-                this.books = this.data[0];
-            } else {
-                this.books = this.data[this.state.index];
-            }
-        }
+    shouldComponentUpdate(nextProps,nextState){
+        if (nextProps.bestEndData) {
+            try{
+                this.data = _chunk(nextProps.bestEndData.ranking.books, 4);
+                if(this.data.length > 1 ){
+                    if (nextState.index > this.data.length - 2) {
+                        this.books = this.data[0];
+                        this.setState({
+                            index: 0
+                        });
+                    } else {
+                        this.books = this.data[nextState.index];
+                    }
+                }
 
-        const appTheme = this.props.appTheme;
+            }catch (e) {
+                console.warn('BestEndBooks shouldComponentUpdate',e.message)
+            }
+
+        }
+        return this.props.bestEndData !== nextProps.bestEndData||this.state.index !== nextState.index
+    }
+
+    render() {
         return (
-            this.props.bestEndData ?
+            this.books&&this.books.length>0 ?
                 <View style={styles.container}>
-                    <CardHeader tagColor={appTheme.primaryColor} title={I18n.t('bestEnd')}/>
+                    <CardHeader tagColor={this.props.appTheme.primaryColor} title={I18n.t('bestEnd')}/>
                     <View style={styles.cardContent}>
                         {this.books.map((item, index) => {
                             return (

@@ -37,23 +37,34 @@ class GuessYouLike extends React.Component {
         }
     };
 
-    render() {
-        if (this.props.guessYouLikeData) {
-            this.data = _chunk(this.props.guessYouLikeData.ranking.books, 8);
-            if (this.state.index > this.data.length - 2) {
-                this.setState({
-                    index: 0
-                });
-                this.books = this.data[0];
-            } else {
-                this.books = this.data[this.state.index];
+    shouldComponentUpdate(nextProps,nextState){
+        if (nextProps.guessYouLikeData) {
+            try{
+                this.data = _chunk(nextProps.guessYouLikeData.ranking.books, 8);
+                if(this.data.length > 1 ){
+                    if (nextState.index > this.data.length - 2) {
+                        this.books = this.data[0];
+                        this.setState({
+                            index: 0
+                        });
+                    } else {
+                        this.books = this.data[nextState.index];
+                    }
+                }
+
+            }catch (e) {
+                console.warn('BestEndBooks shouldComponentUpdate',e.message)
             }
+
         }
-        const appTheme = this.props.appTheme;
+        return this.props.guessYouLikeData !== nextProps.guessYouLikeData||this.state.index !== nextState.index
+    }
+
+    render() {
         return (
-            this.props.guessYouLikeData ?
+            this.books&&this.books.length>0 ?
                 <View style={styles.container}>
-                    <CardHeader tagColor={appTheme.primaryColor} title={I18n.t('guessYouLike')}/>
+                    <CardHeader tagColor={this.props.appTheme.primaryColor} title={I18n.t('guessYouLike')}/>
                     <View style={[styles.cardContent,]}>
                         {this.books.map((item, index) => {
                             return (

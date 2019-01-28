@@ -35,24 +35,39 @@ class HotSearch extends React.Component {
         }
     };
 
-    render() {
-        if (this.props.hotSearchData) {
-            this.data = _chunk(this.props.hotSearchData.ranking.books, 4);
-            if (this.state.index > this.data.length - 2) {
-                this.setState({
-                    index: 0
-                });
-                this.books = this.data[0];
-            } else {
-                this.books = this.data[this.state.index];
-            }
-        }
+    shouldComponentUpdate(nextProps,nextState){
+        if (nextProps.hotSearchData) {
+            try{
+                this.data = _chunk(nextProps.hotSearchData.ranking.books, 4);
+                console.log('nextProps.hotSearchData',nextProps.hotSearchData)
 
-        const appTheme = this.props.appTheme;
+                console.log('this.data.length',this.data.length,this.data)
+                if(this.data.length > 1 ){
+                    if (nextState.index > this.data.length - 2) {
+                        this.books = this.data[0];
+                        console.log('this.books.length',this.books.length,this.books)
+
+                        this.setState({
+                            index: 0
+                        });
+                    } else {
+                        this.books = this.data[nextState.index];
+                    }
+                }
+
+            }catch (e) {
+                console.warn('BestEndBooks shouldComponentUpdate',e.message)
+            }
+
+        }
+        return this.props.hotSearchData !== nextProps.hotSearchData||this.state.index !== nextState.index
+    }
+
+    render() {
         return (
-            this.props.hotSearchData ?
+            this.books&&this.books.length>0 ?
                 <View style={styles.container}>
-                    <CardHeader tagColor={appTheme.primaryColor} title={I18n.t('hotSearch')}/>
+                    <CardHeader tagColor={this.props.appTheme.primaryColor} title={I18n.t('hotSearch')}/>
                     <View style={styles.cardContent}>
                         {this.books.map((item, index) => {
                             return (
