@@ -66,12 +66,12 @@ export const OTHER_SEARCH_URLS = [
     // {siteName:'笔趣阁',searchUrl:'http://zhannei.baidu.com/cse/search?s=920895234054625192&q='},
     //http://m.x23us.com/
     // {siteName:'顶点小说',searchUrl:'http://zhannei.baidu.com/cse/search?s=5592277830829141693&q='},
-    {siteName: DZZ_NAME, searchUrl: DAIZHUZAI_SEARCH},
+    // {siteName: DZZ_NAME, searchUrl: DAIZHUZAI_SEARCH},
     // {siteName:BQG_NAME,searchUrl:BQG_SEARCH,unicodeName:'UTF-8'},
     {siteName: PBDZS_NAME, searchUrl: PBDZS_SEARCH},
     {siteName: WLZW_NAME, searchUrl: WLZW_SEARCH},
     // {siteName:BQT_NAME,searchUrl:BQT_SEARCH,unicodeName:'UTF-8'},
-    {siteName: BQG2_NAME, searchUrl: BQG2_SEARCH},
+    // {siteName: BQG2_NAME, searchUrl: BQG2_SEARCH},
 
     // {siteName:DDXS_NAME,searchUrl:DDXS_SEARCH},
 

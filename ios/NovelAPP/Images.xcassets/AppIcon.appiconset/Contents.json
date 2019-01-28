@@ -2,6 +2,16 @@
   "images" : [
     {
       "idiom" : "iphone",
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
       "size" : "29x29",
       "scale" : "2x"
     },
@@ -23,12 +33,19 @@
     {
       "idiom" : "iphone",
       "size" : "60x60",
+      "filename" : "天下书阁ios120.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "天下书阁ios180(1).png",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "ios-marketing",
+      "size" : "1024x1024",
+      "scale" : "1x"
     }
   ],
   "info" : {

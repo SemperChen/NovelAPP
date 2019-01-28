@@ -67,7 +67,7 @@ class AppWithNavigationState extends Component {
     shouldComponentUpdate(nextProps) {
         if (!this.props.notificationData && nextProps.notificationData) {
             this.notification = getNotification(nextProps.notificationData);
-            this.showNotification();
+            // this.showNotification();
             return false
         }
         return true

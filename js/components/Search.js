@@ -185,26 +185,31 @@ class Search extends React.Component {
                                             onPress={() => {
                                                 this._navToReader(item.otherBookInfo.articleUrlTag, item.otherBookInfo.title, item.otherBookInfo.cover, item.siteName);
                                             }}>
-                            <View>
-                                <View style={styles.itemContent}>
-                                    <Image source={{uri: item.otherBookInfo.cover}}
-                                           style={styles.bookImage}/>
-                                    <View style={styles.itemText}>
-                                        <Text style={styles.bookTitle}>{getChineseText(item.otherBookInfo.title)}</Text>
-                                        <View style={styles.bookAuthor}>
-                                            <MaterialIcons name="account-circle" size={16}
-                                                           style={styles.itemIcon}/>
-                                            <Text>{getChineseText(item.otherBookInfo.author)}</Text>
+                            {item.otherBookInfo.title===""||item.otherBookInfo.title===null
+                                ?
+                                <View/>
+                                :
+                                <View>
+                                    <View style={styles.itemContent}>
+                                        <Image source={{uri: item.otherBookInfo.cover}}
+                                               style={styles.bookImage}/>
+                                        <View style={styles.itemText}>
+                                            <Text style={styles.bookTitle}>{getChineseText(item.otherBookInfo.title)}</Text>
+                                            <View style={styles.bookAuthor}>
+                                                <MaterialIcons name="account-circle" size={16}
+                                                               style={styles.itemIcon}/>
+                                                <Text>{getChineseText(item.otherBookInfo.author)}</Text>
+                                            </View>
+                                            <View>
+                                                <Text
+                                                    numberOfLines={2}>{this.formatText(item.otherBookInfo.shortIntro)}</Text>
+                                            </View>
+                                            <Text>{getChineseText('来源')} <Text
+                                                style={{color: 'cornflowerblue'}}>{getChineseText(item.siteName)}</Text></Text>
                                         </View>
-                                        <View>
-                                            <Text
-                                                numberOfLines={2}>{this.formatText(item.otherBookInfo.shortIntro)}</Text>
-                                        </View>
-                                        <Text>{getChineseText('来源')} <Text
-                                            style={{color: 'cornflowerblue'}}>{getChineseText(item.siteName)}</Text></Text>
                                     </View>
                                 </View>
-                            </View>
+                            }
 
                         </TouchableHighlight>
                     )
