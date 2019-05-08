@@ -29,12 +29,13 @@
 ### 完整版本源码是付费的，支持代码讲解，有问必答，极大减少刚入坑的朋友们所走的弯路，另附送RN开发从新系统开始（从零开始）的全程视频教程，可在淘宝[购买](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
 
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/20.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/4.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/i4.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/13.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/27.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/19.jpg?raw=true"  width="280"/>
+## 天下书阁(ptcms测试版)
+<img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/1.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/2.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/3.jpg?raw=true"  width="280"/>
+<img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/4.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/5.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/6.jpg?raw=true"  width="280"/>
+<img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/7.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/8.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/9.jpg?raw=true"  width="280"/>
 
-## RNAdmob广告案例--[Poetry开源项目](https://github.com/SemperChen/Poetry)
-目前已在GooglePlay和AppStore上架--[Poetry.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/poetry/poetry.apk)
-
-[![App Store Button](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/appstore.png "App Store Button")](https://itunes.apple.com/cn/app/poetry/id1390162198?mt=8&ign-mpt=uo%3D4)
-[![Play Store Button](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/googleplay.png "Play Store Button")](https://play.google.com/store/apps/details?id=com.semper.poetry)
+### [下载](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/image/tad/天下书阁TencentAD.apk)
+### [PTCMS小说站点](https://www.wukongzhuishu.com/)
 
 ## [点击查看书签功能后台代码](https://github.com/SemperChen/bookmark)
 ## 运行
