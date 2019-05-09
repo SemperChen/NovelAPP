@@ -30,7 +30,7 @@
 
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/20.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/4.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/i4.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/13.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/27.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/image/19.jpg?raw=true"  width="280"/>
 ## 天下书阁(ptcms测试版)
-### [详情](https://item.taobao.com/item.htm?spm=a2126o.11854294.0.0.4067483188aobk&id=593756997596)
+### [详情](https://item.taobao.com/item.htm?id=593801797644)
 ### [下载](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/tad/天下书阁TencentAD.apk)
 ### [PTCMS小说站点](https://www.wukongzhuishu.com/)
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/1.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/2.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/3.jpg?raw=true"  width="280"/>
