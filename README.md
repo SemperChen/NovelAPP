@@ -19,6 +19,7 @@
 ### iOS:
 #### [天下书阁语音阅读版.ipa--新增屏幕常亮、极光推送、热更新(RN0.57.8最新版)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/NovelAPP.ipa)
 ### Android:
+#### [掌上搜书.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/掌上搜书.apk)
 #### [天下书阁语音阅读版.apk--新增屏幕常亮、极光推送、热更新(RN0.57.8最新版)](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/天下书阁.apk)
 #### [天下书阁.apk--本项目开源版本](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
 
