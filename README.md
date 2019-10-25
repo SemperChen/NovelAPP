@@ -6,7 +6,7 @@
 ### Android: [天下书阁.apk](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/v1/天下书阁.apk)
 ### 其他版本:
 #### [阅读（RN混编版,仿真翻页）.apk](https://www.pgyer.com/nqs7)
-#### [演示视频：https://v.ku.com](https://v.youku.com/v_show/id_XNDQxMjYxNjEwMA==.html?sharefrom=iphone&sharekey=f0cf27d29be7e24afb82d8ccbfc813be1)
+#### [仿真翻页效果演示视频：https://v.ku.com](https://v.youku.com/v_show/id_XNDQxMjYxNjEwMA==.html?sharefrom=iphone&sharekey=f0cf27d29be7e24afb82d8ccbfc813be1)
 #### 技术交流QQ:18958121
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz1.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz2.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz3.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz4.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz5.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz6.jpg?raw=true"  width="280"/>
 
