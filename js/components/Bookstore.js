@@ -110,19 +110,17 @@ class Bookstore extends React.Component {
         if (this.props.rankingsData) {
             this.rankings = this.props.rankingsData;
             if (NovelAppConfig.readerSex === READER_SEX.FEMALE) {
-                this.fetchHotRecommend(this.rankings.female[11]._id);
+                this.fetchHotRecommend(this.rankings.female[2]._id);
                 this.fetchBestEndBook(this.rankings.female[6]._id);
-                this.fetchEditorRecommend(this.rankings.female[10]._id);
-                this.fetchGuessYouLike(this.rankings.female[0]._id);
-                this.fetchHotSearch(this.rankings.female[5]._id)
-
+                this.fetchEditorRecommend(this.rankings.female[0]._id);
+                this.fetchGuessYouLike(this.rankings.female[5]._id);
+                this.fetchHotSearch(this.rankings.female[9]._id)
             } else {
-                this.fetchHotRecommend(this.rankings.male[12]._id);
+                this.fetchHotRecommend(this.rankings.male[0]._id);
                 this.fetchBestEndBook(this.rankings.male[5]._id);
                 this.fetchEditorRecommend(this.rankings.male[11]._id);
                 this.fetchGuessYouLike(this.rankings.male[0]._id);
                 this.fetchHotSearch(this.rankings.male[4]._id)
-
             }
         }
     };

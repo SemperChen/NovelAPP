@@ -60,7 +60,7 @@ export const CATEGORY_LV2_URL = ZSSQ_BASE_URL + '/cats/lv2';
  */
 export const CATEGORY_BOOKS_URL = ZSSQ_BASE_URL + '/book/by-categories';
 
-export const SPREAD_URL = W_ZSSQ_URL + '/spread';
+export const SPREAD_URL = 'https://raw.githubusercontent.com/SimpeChan/Notification/a4833de749027dbd31195dda04b3c9fb5df5daa1/spread.json';
 export const OTHER_SEARCH_URLS = [
     //http://m.qu.la/
     // {siteName:'笔趣阁',searchUrl:'http://zhannei.baidu.com/cse/search?s=920895234054625192&q='},
