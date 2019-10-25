@@ -1,5 +1,5 @@
 # NovelAPP    [![Build Status](https://travis-ci.org/SemperChen/NovelAPP.svg?branch=master)](https://travis-ci.org/SemperChen/NovelAPP)
-## 208元React Native一对一教学，新手入坑，原生混编，包教包会[查看详情](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
+## 208元React Native一对一教学，新手入坑，RN原生混编，包教包会[查看详情](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
 
 ## 下载安装
 ### iOS: [天下书阁.ipa](https://raw.githubusercontent.com/SemperChen/tianxiashuge/master/NovelAPP.ipa)
