@@ -10,7 +10,7 @@
 #### [阅读RN混编版（仿真翻页，正版）.apk](https://www.pgyer.com/nqs7)
 #### [演示视频：https://v.ku.com](https://v.youku.com/v_show/id_XNDQxMjYxNjEwMA==.html?sharefrom=iphone&sharekey=f0cf27d29be7e24afb82d8ccbfc813be1)
 
-<img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz1.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/masterzz2.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz3.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz4.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz5.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz6.jpg?raw=true"  width="280"/>
+<img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz1.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz2.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz3.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz4.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz5.jpg?raw=true"  width="280"/><img src="https://github.com/SemperChen/tianxiashuge/blob/master/zz6.jpg?raw=true"  width="280"/>
 
 ## RN阅读器
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/1.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/2.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/3.jpg?raw=true"  width="280"/>
