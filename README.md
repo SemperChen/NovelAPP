@@ -15,7 +15,7 @@
 ## RN阅读器
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/1.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/2.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/3.jpg?raw=true"  width="280"/>
 <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/4.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/5.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/6.jpg?raw=true"  width="280"/>
-<img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/7.jpg?raw=true" width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/8.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/9.jpg?raw=true"  width="280"/>
+<img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/8.jpg?raw=true"  width="280"/> <img src="https://github.com/SemperChen/tianxiashuge/blob/master/tad/9.jpg?raw=true"  width="280"/>
 
 ## [点击查看书签功能后台代码](https://github.com/SemperChen/bookmark)
 ## 运行
