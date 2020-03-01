@@ -99,6 +99,9 @@ export function getBookInfoDZZ(htmlText) {
 
 }
 
+
+
+
 export function getBookContentDZZ(htmlText, bookUrl, bookName, currentChapterNum, fontSize) {
     if (!(htmlText === undefined || htmlText === '')) {
         try {
@@ -457,4 +460,52 @@ export function getNotification(htmlText) {
     }
     console.log('The htmlText of getNotification func for a ParseHtmlUtil cannot be empty');
     return {title: null, time: null, content: null, url: null}
+}
+
+/**
+ * 解析大主宰网 http://m.daizhuzai.com/
+ * @param htmlText
+ */
+export function getBookInfoBQGTV(htmlText) {
+    if (!(htmlText === undefined || htmlText === '')) {
+        try {
+            // console.log("htmlText123=",htmlText)
+            let title = htmlText.substring(htmlText.indexOf('<h2>')+4, htmlText.indexOf('</h2>'));
+            let authorContent = htmlText.substring(htmlText.indexOf('作者：<a'));
+            authorContent = authorContent.substring(authorContent.indexOf('>')+1);
+            let author = authorContent.substring(0,authorContent.indexOf('<'));
+
+            let dateContent = htmlText.substring(htmlText.indexOf('更新时间：')+5);
+            let date = dateContent.substring(0,dateContent.indexOf('</span>'));
+
+            let lastChapterContent = htmlText.substring(htmlText.indexOf('最新章节：<a')+7);
+            lastChapterContent = lastChapterContent.substring(lastChapterContent.indexOf('>')+1);
+            let lastChapter = lastChapterContent.substring(0,lastChapterContent.indexOf('<'));  
+            
+            let categoryContent = htmlText.substring(htmlText.indexOf('分类：<a'));
+            categoryContent = categoryContent.substring(categoryContent.indexOf('>')+1);
+            let category = categoryContent.substring(0,categoryContent.indexOf('<'));
+
+            let introContent = htmlText.substring(htmlText.indexOf('text-indent">')+13);
+            let intro = introContent.substring(0,introContent.indexOf('</p>'));
+
+            let imgContent = htmlText.substring(htmlText.indexOf('<img src="')+10);
+            let image = imgContent.substring(0,imgContent.indexOf('"'));
+
+            let articleUrlTagContent = htmlText.substring(htmlText.indexOf('book-an'));
+            articleUrlTagContent = htmlText.substring(htmlText.indexOf('<a href="')+9);
+            let articleUrlTag = articleUrlTagContent.substring(0,articleUrlTagContent.indexOf('"'));
+
+            // let itemContent = mainContent.split('class="lazy" src="');
+            // itemContent.shift();
+            console.log('articleUrlTag',articleUrlTag)
+            
+            // return null
+            // console.log(new BookInfo(title, author, cat, shortIntro, lastChapter, date));
+            return new BookInfo(title, author, category, intro, lastChapter, date, image, articleUrlTag);
+        } catch (e) {
+            console.warn('getBookInfoDZZ 解析失败', e.message)
+        }
+    }
+
 }

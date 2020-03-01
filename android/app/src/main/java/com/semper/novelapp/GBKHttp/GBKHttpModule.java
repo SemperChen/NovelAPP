@@ -23,9 +23,10 @@ public class GBKHttpModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void fetchGBKData(
             String url,
+            String keyword,
             Callback errorCallback,
             Callback successCallback) {
-        GBKHttp.getDataGBK(url,successCallback,errorCallback);
+        GBKHttp.getDataGBK(url,keyword,successCallback,errorCallback);
     }
 
 }

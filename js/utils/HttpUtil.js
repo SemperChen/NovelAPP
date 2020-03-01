@@ -73,18 +73,18 @@ export function fetchHtml(url) {
     })
 }
 
-export function fetchOtherSearch(unicodeName, url) {
+export function fetchOtherSearch(url,keyword,unicodeName) {
     if (Platform.OS === 'android' && unicodeName === 'GBK') {
-        return fetchHtmlGBK(url)
+        return fetchHtmlGBK(url,keyword)
     } else {
         return fetchJSON(url)
     }
 
 }
 
-export function fetchHtmlGBK(url) {
+export function fetchHtmlGBK(url,keyword) {
     return new Promise((resolve, reject) => {
-        GBKHttp.fetchGBKData(url,
+        GBKHttp.fetchGBKData(url,keyword,
             (error) => {
                 reject(new Error(error));
             },

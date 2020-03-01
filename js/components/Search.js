@@ -17,10 +17,10 @@ import {BOOKMARK_HEIGHT, BOOKMARK_WIDTH, WIDTH} from "../utils/DimensionsUtil";
 import {connect} from "react-redux";
 import {requestSearch} from "../actions/search";
 import ToastUtil from "../utils/ToastUtil";
-import {getBookInfoDZZ, getSearchBookInfoByParseHtml} from "../utils/ParseHtmlUtil";
+import {getBookInfoDZZ, getSearchBookInfoByParseHtml,getBookInfoBQGTV} from "../utils/ParseHtmlUtil";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {BookInfo} from "../model/BookInfo";
-import {DAIZHUZAI_SEARCH, ZSSQ_SEARCH} from "../constants/api";
+import {DAIZHUZAI_SEARCH, ZSSQ_SEARCH, BQGTV_SEARCH, zhaichao_SEARCH} from "../constants/api";
 import {requestOtherSearch} from "../actions/otherSearch";
 import MainSearchContent from "../commons/MainSearchContent";
 import I18n from "../i18n/i18n";
@@ -58,6 +58,7 @@ class Search extends React.Component {
     }
 
     shouldComponentUpdate(nextProps) {
+        // console.log('nextProps.otherSearchResult',nextProps.otherSearchResult)
         return this.props.searchResult !== nextProps.searchResult ||
             this.props.baseSearchUrl !== nextProps.baseSearchUrl ||
             this.props.otherSearchResult !== nextProps.otherSearchResult ||
@@ -107,12 +108,15 @@ class Search extends React.Component {
     render() {
 
         const appTheme = this.props.screenProps.appTheme;
-        // console.log(this.props.searchResult);
+        console.log(this.props.searchResult);
         if (this.props.otherSearchResult) {
             // console.log(this.props.otherSearchResult);
             switch (this.props.baseOtherSearchUrl) {
                 case DAIZHUZAI_SEARCH:
                     this.otherBookInfo = getBookInfoDZZ(this.props.otherSearchResult);
+                    break;
+                    case zhaichao_SEARCH:
+                    this.otherBookInfo = getBookInfoBQGTV(this.props.otherSearchResult);
                     break;
                 default:
                     this.otherBookInfo = getSearchBookInfoByParseHtml(this.props.otherSearchResult);

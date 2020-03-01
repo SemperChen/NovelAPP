@@ -2,13 +2,13 @@
  * @author Semper
  */
 import {call, fork, put} from "redux-saga/effects";
-import {searchBook} from "../utils/HttpUtil";
+import {fetchOtherSearch, searchBook} from "../utils/HttpUtil";
 import {OTHER_SEARCH_URLS} from "../constants/api";
 import {receiveOtherSearch} from "../actions/otherSearch";
 
 function* fetchOtherSearchResult(searchData, bookName) {
     try {
-        const otherSearchResult = yield call(searchBook, searchData.searchUrl + bookName);
+        const otherSearchResult = yield call(fetchOtherSearch, searchData.searchUrl ,bookName, searchData.unicodeName);
         yield put(receiveOtherSearch(otherSearchResult, searchData.searchUrl, searchData.siteName))
     } catch (error) {
         console.log('fetchSearchResult:', error.message);

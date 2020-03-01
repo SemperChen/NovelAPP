@@ -20,11 +20,14 @@ const W_ZSSQ_URL = 'http://www.zhuishushenqi.com';
 export const ZSSQ_IMG_URL = 'http://statics.zhuishushenqi.com';
 export const BQG_BASE_URL = 'http://www.qu.la';
 export const BQT_BASE_URL = 'http://www.biquta.com';
+export const zhaichao_BASE_URL = 'http://www.zhaichao.cc';//摘抄网
 
 export const ZSSQ_SEARCH = ZSSQ_BASE_URL + '/book/fuzzy-search?query=';
 export const DAIZHUZAI_SEARCH = 'http://www.daizhuzai.com/search.html?searchtype=novelname&searchkey=';
 export const WLZW_SEARCH = 'http://zhannei.baidu.com/cse/search?s=5516679623550761859&q=';
 export const BQT_SEARCH = 'http://zhannei.baidu.com/cse/search?s=11634943235346415327&q=';
+export const zhaichao_SEARCH = 'http://www.zhaichao.cc/modules/article/search.php?searchkey=';
+
 
 export const BQG_SEARCH = 'http://zhannei.baidu.com/cse/search?s=920895234054625192&q=';
 export const BQG2_SEARCH = 'http://zhannei.baidu.com/cse/search?s=14041278195252845489&q=';
@@ -40,6 +43,7 @@ export const BQG_NAME = '笔趣阁';
 export const BQG2_NAME = '笔趣阁2';
 export const PBDZS_NAME = '平板电子书网';
 export const DDXS_NAME = '顶点小说';
+export const zhaichao_NAME = '摘抄网';
 
 export const ZSSQ_CHARTER_BASE = 'http://chapter2.zhuishushenqi.com/chapter/';
 export const BOOK_DETAIL_BASE = ZSSQ_BASE_URL + '/book/';
@@ -68,8 +72,10 @@ export const OTHER_SEARCH_URLS = [
     // {siteName:'顶点小说',searchUrl:'http://zhannei.baidu.com/cse/search?s=5592277830829141693&q='},
     // {siteName: DZZ_NAME, searchUrl: DAIZHUZAI_SEARCH},
     // {siteName:BQG_NAME,searchUrl:BQG_SEARCH,unicodeName:'UTF-8'},
-    {siteName: PBDZS_NAME, searchUrl: PBDZS_SEARCH},
-    {siteName: WLZW_NAME, searchUrl: WLZW_SEARCH},
+    // {siteName: PBDZS_NAME, searchUrl: PBDZS_SEARCH},
+    // {siteName: WLZW_NAME, searchUrl: WLZW_SEARCH},
+    {siteName: zhaichao_NAME, searchUrl: zhaichao_SEARCH,unicodeName:'GBK'},
+
     // {siteName:BQT_NAME,searchUrl:BQT_SEARCH,unicodeName:'UTF-8'},
     // {siteName: BQG2_NAME, searchUrl: BQG2_SEARCH},
 

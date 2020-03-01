@@ -1,6 +1,10 @@
 package com.semper.novelapp.GBKHttp;
 
+import android.util.Log;
+
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -16,9 +20,19 @@ import okhttp3.Response;
 
 class GBKHttp {
 
-    static void getDataGBK(String url,
+    static void getDataGBK(String url,String keyword,
                            final com.facebook.react.bridge.Callback successCallback,
                            final com.facebook.react.bridge.Callback errorCallback) {
+        // url = new String(url,"GBK");
+        try {
+
+            keyword= URLEncoder.encode(keyword,"GBK");
+//            Log.i("url----",keyword);
+            url = url + keyword;
+        }catch (Exception e){
+            errorCallback.invoke(e.getMessage());
+        }
+
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(url)
