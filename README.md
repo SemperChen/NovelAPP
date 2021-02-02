@@ -5,8 +5,6 @@
 
 <img src="https://gitee.com/semperchen/tianxiashuge/raw/master/ttad/toutiaoad4.jpg"  width="280"/><img src="https://gitee.com/semperchen/tianxiashuge/raw/master/ttad/toutiaoad1.jpg"  width="280"/><img src="https://gitee.com/semperchen/tianxiashuge/raw/master/ttad/toutiaoad2.jpg"  width="280"/>
 
-## 208元React Native一对一教学，新手入坑，RN原生混编，包教包会[查看详情](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.70551debQS6lMQ&id=574562019379)
-
 ## 下载安装
 ### iOS: [天下书阁.ipa](https://gitee.com/semperchen/tianxiashuge/raw/master/NovelAPP.ipa)
 ### Android: [天下书阁.apk](https://gitee.com/semperchen/tianxiashuge/raw/master/v1/天下书阁.apk)
