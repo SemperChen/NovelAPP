@@ -16,7 +16,7 @@
     "clear watchman watches": "watchman watch-del-all"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "prop-types": "^15.6.2",
     "react": "16.6.3",
     "react-native": "0.58.1",
